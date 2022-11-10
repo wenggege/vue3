@@ -1,0 +1,20 @@
+:root {
+  --el-color-primary: #1765EC;
+  --el-text-color-placeholder:#AFB0B4;
+  --el-text-color-regular: #2E2E2F;
+  --el-text-color-primary: #646566;
+}
+.el-dialog__header {
+  border-bottom: 1px solid #F0F2F5;
+}
+.el-dialog__footer {
+  border-top: 1px solid #F0F2F5;
+  padding-bottom: 15px !important;
+  padding-top: 15px !important;
+}
+
+.el-table {
+  .el-form-item--default {
+    margin-bottom: 0 !important;
+  }
+}

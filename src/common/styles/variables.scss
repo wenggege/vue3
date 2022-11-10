@@ -1,0 +1,27 @@
+$mainColor: #1865ec;
+$mainColorPlain: #e0ebff;
+
+$sideBarWidth: 200px;
+$sideBarBg: #fff;
+$fontSizeTitle: 18px;
+$fontSize: 14px;
+
+$plainColor: #f7f8fa;
+$margin: 0 auto;
+$hideSideBarWidth: 60px;
+
+$bgcolor: #f7f8fa;
+
+:export {
+  mainColor: $mainColor;
+  mainColorPlain: $mainColorPlain;
+  fontSizeTitle: $fontSizeTitle;
+  fontSize: $fontSize;
+  margin: $margin;
+  plainColor: $plainColor;
+
+  sideBarWidth: $sideBarWidth;
+  sideBarBg: $sideBarBg;
+  hideSideBarWidth: $hideSideBarWidth;
+  bgcolor: $bgcolor;
+}

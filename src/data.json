@@ -1,0 +1,230 @@
+// {
+//     "Code": "0",
+//     "Data":{
+//         "Code":"nodeList",
+//         "Name": "包装计划节点列表",
+//         "Id":"1432",
+//         "Selection":false, 
+//         "Columns":[{
+//             "Label":"任务名称",
+//             "Prop":"NodeName",
+//             "IsShow":true,
+//             "Type":"link",  
+//             "Link":"",
+//             "IsFixed":true
+//         },
+//         {
+//             "Label":"状态",
+//             "Prop":"Code",
+//             "IsShow":true,
+//             "Type":"",  //链接、选框
+//             "Link":"",
+//             "IsFixed":false
+//         },
+//         {
+//             "Label":"正常/异常",
+//             "Prop":"Remarks",
+//             "IsShow":true,
+//             "Type":"",  //链接、选框
+//             "Link":"",
+//             "IsFixed":false
+//         },
+//         {
+//             "Label":"计划完成时间",
+//             "Prop":"Create.Name",
+//             "IsShow":true,
+//             "Type":"",  //链接、选框
+//             "Link":"",
+//             "IsFixed":false
+//         },
+//         {
+//             "Label":"实际完成时间",
+//             "Prop":"Create.Time",
+//             "IsShow":true,
+//             "Type":"",  //链接、选框
+//             "Link":"",
+//             "IsFixed":false
+//         },
+//         {
+//             "Label":"前置任务",
+//             "Prop":"NodeName",
+//             "IsShow":true,
+//             "Type":"link",  
+//             "Link":"",
+//             "IsFixed":true
+//         },
+//         {
+//             "Label":"责任人",
+//             "Prop":"NodeName",
+//             "IsShow":true,
+//             "Type":"link",  
+//             "Link":"",
+//             "IsFixed":true
+//         }
+//     ],
+//     "RowHandlers":[{
+//         "Title":"编辑",
+//         "Type":"link",
+//         "Api":"",
+//         "Link":"/unitProcessDetail",
+//         "Query":"Id",
+//         "Code":'12',
+//     },
+//     {
+//         "Title":"禁用",
+//         "Api":"",
+//         "Query":"Ids"
+//     },
+//     {
+//         "Title":"删除",
+//         "Api":"",
+//         "Query":"Ids",
+//         "Code":"34"
+//     }
+// ],
+//     "HeadHandlers":[
+//     {
+//         "Title":"批量禁用",
+//         "Api":"",
+//         "Query":"Ids",
+//         "Method":"POST",
+//         "Code":'123'
+//     },{
+//         "Title":"批量删除",
+//         "Api":"",
+//         "Query":"Ids",
+//         "Method":"POST",
+//         "Code":'456'
+//     },
+//     {
+//         "Title":"新增",
+//         "Type":"link",
+//         "Link":"",
+//         "Code":'567'
+//     }
+// ]
+//     }
+//   }
+{
+    "Code": "0",
+    "Data": [
+        {
+            "PackPlanNodeGUID": "10",
+            "NodeName": "包材信息表-PMO",
+            "Status": 3,
+            "StatusText": "进行中",
+            "IsNormal": 45,
+            "NormalText": "正常",
+            "PlanFinishDateText": "2022-12-20",
+            "ActualFinishDateText": "2022-12-10",
+            "PrefixNodes": "labore",
+            "PrefixNodeName": "消统等直七",
+            "PMContent": [
+                {
+                    "Name": "三直",
+                    "DomainId": "q.rmvojxnf@qq.com"
+                },
+                {
+                    "Name": "朱元璋",
+                    "DomainId": "q.rmvojxnf@qq.com"
+                }
+            ],
+            "PMRrole": "quis mollit aute",
+            "IsFinish": 77,
+            "IsRestart": 15
+        }
+    ]
+}
+{
+    "Code": 200,
+    "Data": {
+        "Code": "nodeList",
+        "Name": "包装计划节点列表",
+        "Id": "1432",
+        "Selection": false,
+        "Columns": [
+            {
+                "Label": "任务名称",
+                "Prop": "NodeName",
+                "IsShow": true,
+                "Type": "link",
+                "Link": "",
+                "IsFixed": true,
+                "NeedDeal": true,
+            },
+            {
+                "Label": "状态",
+                "Prop": "StatusText",
+                "IsShow": true,
+                "Type": "",
+                "Link": "",
+                "IsFixed": false,
+                "NeedDeal": false,
+            },
+            {
+                "Label": "正常/异常",
+                "Prop": "NormalText",
+                "IsShow": true,
+                "Type": "",
+                "Link": "",
+                "IsFixed": false,
+                "NeedDeal": false,
+            },
+            {
+                "Label": "计划完成时间",
+                "Prop": "PlanFinishDateText",
+                "IsShow": true,
+                "Type": "",
+                "Link": "",
+                "IsFixed": false,
+                "NeedDeal": false,
+            },
+            {
+                "Label": "实际完成时间",
+                "Prop": "ActualFinishDateText",
+                "IsShow": true,
+                "Type": "",
+                "Link": "",
+                "IsFixed": false,
+                "NeedDeal": false,
+            },
+            {
+                "Label": "前置任务",
+                "Prop": "PrefixNodeName",
+                "IsShow": true,
+                "Type": "link",
+                "Link": "",
+                "IsFixed": false,
+                "NeedDeal": true,
+            },
+            {
+                "Label": "责任人",
+                "Prop": "PMContent",
+                "IsShow": true,
+                "Type": "link",
+                "Link": "",
+                "IsFixed": false,
+                "NeedDeal": true,
+            }
+            {
+                "Label": "操作",
+                "Prop": "Operater",
+                "IsShow": true,
+                "Type": "link",
+                "IsFixed": "right",
+                "NeedDeal": true,
+            }
+        ],
+        "RowHandlers": [
+            {
+                "Title": "完成任务",
+                "Api": "",
+                "Query": "Id"
+            },
+            {
+                "Title": "重启任务"
+            }
+        ],
+        "HeadHandlers": []
+    }
+}
